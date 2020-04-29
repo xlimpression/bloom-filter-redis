@@ -1,0 +1,31 @@
+server:
+   port: 8097   
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        
+
+spring:
+  application:
+      name: bloom-filter-redis-master
+  main:
+    allow-bean-definition-overriding: true
+
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: http://node1-calcsvr.realsvr.cs-xc-idc2-area1.singhand.com:8800/eureka/
+      healthcheck:
+         enabled: true
+   instance: 
+       prefer-ip-address : true
+       instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}:@project.version@
+       lease-renewal-interval-in-seconds: 5
+       lease-expiration-duration-in-seconds: 15
+       
+logging:
+  level:
+    com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver: WARN
+

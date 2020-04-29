@@ -1,0 +1,20 @@
+---
+clusterServersConfig:
+  idleConnectionTimeout: 10000
+  connectTimeout: 10000
+  timeout: 3000
+  retryAttempts: 3
+  retryInterval: 1500
+  password: forgeeks
+  subscriptionsPerConnection: 5
+  clientName: null
+  loadBalancer: !<org.redisson.connection.balancer.RoundRobinLoadBalancer> {}
+  slaveConnectionPoolSize: 128
+  masterConnectionPoolSize: 128
+  nodeAddresses:
+  - "redis://172.11.104.101:7000"
+  - "redis://172.11.104.101:7001"
+  - "redis://172.11.104.103:7000"
+  - "redis://172.11.104.103:7001"
+  - "redis://172.11.104.106:7000"
+  - "redis://172.11.104.106:7001"

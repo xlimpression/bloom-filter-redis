@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration status="INFO" monitorInterval="30" packages="com.client.netty.log">
+    <appenders>
+        <console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%highlight{[ %p ] [%-d{yyyy-MM-dd HH:mm:ss}] [%l] [%t] %m%n}"/>
+        </console>
+         <RollingFile name="RollingFile" fileName="logs/app.log"
+                 filePattern="logs/app-%d{yyyy-MM-dd HH}.log">
+	      <PatternLayout>
+	        <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+	      </PatternLayout>
+	      <Policies>
+	        <TimeBasedTriggeringPolicy interval="1"/>
+	        <SizeBasedTriggeringPolicy size="250MB"/>
+	      </Policies>
+	    </RollingFile>
+    </appenders>
+
+    <loggers>
+	    <logger name="org.springframework" level="INFO"></logger>
+        <logger name="org.mybatis" level="INFO"></logger>
+        <root level="info">
+            <appender-ref ref="Console"/>
+            <appender-ref ref="RollingFile"/>
+        </root>
+    </loggers>
+</configuration>
