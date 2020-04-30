@@ -1,19 +1,16 @@
 package com.singhand.bloomFilter.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
-import com.alibaba.fastjson.serializer.BeanContext;
 import com.alibaba.fastjson.serializer.ContextValueFilter;
-import com.alibaba.fastjson.serializer.PropertyFilter;
-import com.google.common.base.CaseFormat;
-import com.singhand.bloomFilter.entities.ByteUnitFormat;
-import com.singhand.bloomFilter.entities.Scale;
+import com.singhand.bloomFilter.util.Scale;
+import com.singhand.bloomFilter.util.ByteUnitFormat;
 import com.singhand.bloomFilter.vo.DataPackage;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.redisson.api.RBloomFilter;
 import org.redisson.api.RedissonClient;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
@@ -24,7 +21,7 @@ import java.util.stream.Collectors;
 
 
 @RestController
-public class RequestController {
+public class BloomFilterController {
 	
 	private static final Logger LOGGER = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
 
@@ -40,13 +37,14 @@ public class RequestController {
 
 	private RedissonClient redissonClient;
 
-	public RequestController(org.redisson.api.RedissonClient redissonClient) {
+	public BloomFilterController(org.redisson.api.RedissonClient redissonClient) {
 		this.redissonClient = redissonClient;
 	}
 
 
 	@ResponseBody
 	@RequestMapping(value ="/create", method= RequestMethod.POST)
+	@PreAuthorize("hasAuthority('ROLE_NORMAL')")
 	public DataPackage<Boolean> create(@RequestParam String topic){
 		Scale scale = findScale(topic);
 		if(Objects.isNull(scale)){
@@ -63,6 +61,7 @@ public class RequestController {
 
 	@ResponseBody
 	@RequestMapping(value ="/del", method= RequestMethod.POST)
+	@PreAuthorize("hasAuthority('ROLE_NORMAL')")
 	public DataPackage<Boolean> del(@RequestParam String topic){
 		Scale scale = findScale(topic);
 		if(Objects.isNull(scale)){
@@ -80,6 +79,7 @@ public class RequestController {
 
 	@ResponseBody
 	@RequestMapping(value ="/put", method= RequestMethod.POST)
+	@PreAuthorize("hasAuthority('ROLE_NORMAL')")
 	public  DataPackage<Boolean> add(@RequestParam String topic,@RequestParam String url){
 		Scale scale = findScale(topic);
 		if(Objects.isNull(scale) || StringUtils.isBlank(url)){
@@ -101,6 +101,7 @@ public class RequestController {
 
 	@ResponseBody
 	@RequestMapping(value ="/contains", method= RequestMethod.POST)
+	@PreAuthorize("hasAuthority('ROLE_NORMAL')")
 	public synchronized DataPackage<Boolean> contains(@RequestParam String topic, @RequestParam String url) {
 		Scale scale = findScale(topic);
 		if(Objects.isNull(scale) || StringUtils.isBlank(url)){
@@ -122,6 +123,7 @@ public class RequestController {
 
 	@ResponseBody
 	@RequestMapping(value ="/info", method= RequestMethod.POST)
+	@PreAuthorize("hasAuthority('ROLE_NORMAL')")
 	public DataPackage<String> info(@RequestParam String topic){
 		Scale scale = findScale(topic);
 		if(Objects.isNull(scale)){
@@ -137,6 +139,7 @@ public class RequestController {
 
 	@ResponseBody
 	@RequestMapping(value ="/infoAll", method= RequestMethod.POST)
+	@PreAuthorize("hasAuthority('ROLE_NORMAL')")
 	public DataPackage<List<String>> infoAll(){
 		List<String> collect = redissonClient.getKeys().getKeysStream().
 				filter(StringUtils::isNotBlank).

@@ -1,4 +1,4 @@
-package com.singhand.bloomFilter.entities;
+package com.singhand.bloomFilter.util;
 
 /**
  * 

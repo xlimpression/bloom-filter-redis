@@ -1,0 +1,271 @@
+2020-04-30 12:00:02,843 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8827fc9c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:00:03,018 INFO c.s.b.Application [main] No active profile set, falling back to default profiles: default
+2020-04-30 12:00:03,701 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-30 12:00:03,784 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 75ms. Found 1 repository interfaces.
+2020-04-30 12:00:04,138 INFO o.s.c.c.s.GenericScope [main] BeanFactory id=27bf34d1-842e-3cd4-bb9c-ce4365c5f4de
+2020-04-30 12:00:04,263 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6c0df99f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:00:04,376 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$4bbc1d9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:00:04,383 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:00:04,387 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@682e422c' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:00:04,392 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$2990648b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:00:04,400 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:00:04,419 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8827fc9c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:00:04,794 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8097 (http)
+2020-04-30 12:00:04,907 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization completed in 1879 ms
+2020-04-30 12:00:05,049 WARN c.n.c.s.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+2020-04-30 12:00:05,050 INFO c.n.c.s.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-30 12:00:05,061 INFO c.n.c.DynamicPropertyFactory [main] DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@19bf47fc
+2020-04-30 12:00:05,786 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2020-04-30 12:00:05,956 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-04-30 12:00:06,009 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-30 12:00:06,075 INFO o.h.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2020-04-30 12:00:06,077 INFO o.h.c.Environment [main] HHH000206: hibernate.properties not found
+2020-04-30 12:00:06,208 INFO o.h.a.c.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-04-30 12:00:06,347 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-30 12:00:07,325 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-30 12:00:08,328 INFO o.r.Version [main] Redisson 3.12.5
+2020-04-30 12:00:08,546 INFO o.r.c.ClusterConnectionManager [main] Redis cluster nodes configuration got from /172.11.104.101:7000:
+01c1a7607b6d2e289cd8b2869f5a152b02fa7bc0 172.11.104.106:7000@17000 slave f5f1f75e664bd99854f99bb59bdb0b226103eb7b 0 1588219221843 5 connected
+7302f69e6ee4c26f6e7f2b1a4cc65bdc5fb93978 172.11.104.106:7001@17001 master - 0 1588219220000 4 connected 10923-16383
+2c66171961324137f73c540faa6ec6e90d649afe 172.11.104.103:7000@17000 slave af0fd0e44d805d19269bd905ec081b11ab6c923e 0 1588219220000 3 connected
+f5f1f75e664bd99854f99bb59bdb0b226103eb7b 172.11.104.103:7001@17001 master - 0 1588219220838 2 connected 5461-10922
+af0fd0e44d805d19269bd905ec081b11ab6c923e 172.11.104.101:7000@17000 myself,master - 0 1588219217000 1 connected 0-5460
+3a21d3289e2912b13f084b640bd66c5cc7753c15 172.11.104.101:7001@17001 slave 7302f69e6ee4c26f6e7f2b1a4cc65bdc5fb93978 0 1588219219000 6 connected
+
+2020-04-30 12:00:08,613 INFO o.r.c.ClusterConnectionManager [redisson-netty-2-4] slaves: [redis://172.11.104.106:7000] added for slot ranges: [[5461-10922]]
+2020-04-30 12:00:08,614 INFO o.r.c.ClusterConnectionManager [redisson-netty-2-2] slaves: [redis://172.11.104.103:7000] added for slot ranges: [[0-5460]]
+2020-04-30 12:00:08,615 INFO o.r.c.ClusterConnectionManager [redisson-netty-2-5] slaves: [redis://172.11.104.101:7001] added for slot ranges: [[10923-16383]]
+2020-04-30 12:00:08,679 INFO o.r.c.p.PubSubConnectionPool [redisson-netty-2-31] 1 connections initialized for /172.11.104.106:7000
+2020-04-30 12:00:08,679 INFO o.r.c.p.MasterPubSubConnectionPool [redisson-netty-2-24] 1 connections initialized for /172.11.104.101:7000
+2020-04-30 12:00:08,684 INFO o.r.c.p.MasterConnectionPool [redisson-netty-2-22] 24 connections initialized for /172.11.104.103:7001
+2020-04-30 12:00:08,684 INFO o.r.c.p.PubSubConnectionPool [redisson-netty-2-31] 1 connections initialized for /172.11.104.103:7000
+2020-04-30 12:00:08,685 INFO o.r.c.p.PubSubConnectionPool [redisson-netty-2-8] 1 connections initialized for /172.11.104.101:7001
+2020-04-30 12:00:08,684 INFO o.r.c.p.MasterPubSubConnectionPool [redisson-netty-2-15] 1 connections initialized for /172.11.104.106:7001
+2020-04-30 12:00:08,686 INFO o.r.c.p.SlaveConnectionPool [redisson-netty-2-31] 24 connections initialized for /172.11.104.106:7000
+2020-04-30 12:00:08,687 INFO o.r.c.p.SlaveConnectionPool [redisson-netty-2-20] 24 connections initialized for /172.11.104.101:7001
+2020-04-30 12:00:08,692 INFO o.r.c.ClusterConnectionManager [redisson-netty-2-19] master: redis://172.11.104.106:7001 added for slot ranges: [[10923-16383]]
+2020-04-30 12:00:08,693 INFO o.r.c.p.MasterConnectionPool [redisson-netty-2-19] 24 connections initialized for /172.11.104.106:7001
+2020-04-30 12:00:08,693 INFO o.r.c.ClusterConnectionManager [redisson-netty-2-21] master: redis://172.11.104.103:7001 added for slot ranges: [[5461-10922]]
+2020-04-30 12:00:08,693 INFO o.r.c.p.MasterPubSubConnectionPool [redisson-netty-2-21] 1 connections initialized for /172.11.104.103:7001
+2020-04-30 12:00:08,693 INFO o.r.c.ClusterConnectionManager [redisson-netty-2-18] master: redis://172.11.104.101:7000 added for slot ranges: [[0-5460]]
+2020-04-30 12:00:08,693 INFO o.r.c.p.MasterConnectionPool [redisson-netty-2-18] 24 connections initialized for /172.11.104.101:7000
+2020-04-30 12:00:08,694 INFO o.r.c.p.SlaveConnectionPool [redisson-netty-2-22] 24 connections initialized for /172.11.104.103:7000
+2020-04-30 12:00:08,956 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7322013f, org.springframework.security.web.context.SecurityContextPersistenceFilter@318353, org.springframework.security.web.header.HeaderWriterFilter@cd9ce76, org.springframework.security.web.authentication.logout.LogoutFilter@1deca369, com.singhand.bloomFilter.filter.JwtTokenFilter@10f384a2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d5ddfac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d4aadc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a744e32, org.springframework.security.web.session.SessionManagementFilter@2b8f5aa4, org.springframework.security.web.access.ExceptionTranslationFilter@7104b117, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a9b8f33]
+2020-04-30 12:00:08,973 WARN c.n.c.s.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+2020-04-30 12:00:08,974 INFO c.n.c.s.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-30 12:00:09,186 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 12:00:09,275 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-30 12:00:09,690 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 18 endpoint(s) beneath base path '/actuator'
+2020-04-30 12:00:09,895 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8097 (http) with context path ''
+2020-04-30 12:00:09,898 INFO c.s.b.Application [main] Started Application in 7.591 seconds (JVM running for 9.398)
+2020-04-30 12:00:10,411 INFO o.s.w.s.DispatcherServlet [RMI TCP Connection(2)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2020-04-30 12:00:10,422 INFO o.s.w.s.DispatcherServlet [RMI TCP Connection(2)-127.0.0.1] Completed initialization in 11 ms
+2020-04-30 12:00:22,059 INFO o.h.h.i.QueryTranslatorFactoryInitiator [http-nio-8097-exec-1] HHH000397: Using ASTQueryTranslatorFactory
+2020-04-30 12:00:23,830 INFO  [http-nio-8097-exec-1] 127.0.0.1 ==>> "POST /authentication/login(password=12345, username=geek) HTTP/1.1" 2027ms <<== "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnZWVrIiwiY3JlYXRlZCI6MTU4ODIxOTIyMzM2NCwiZXhwIjoyMDIwMjE5MjIzfQ.eksM2tWSb2NCNjYXWpF3rOxEARosq53VwIhbBqTnZIFUCJ_mnHqO5ZhXhuHkGSMr4QwYNVhVDgDnw1DVxaH7sw"
+2020-04-30 12:02:24,796 INFO  [http-nio-8097-exec-5] 127.0.0.1 ==>> "POST /infoAll() HTTP/1.1" 186ms <<== {"data":["{\"falseProbability\":0.00010,\"hashIterations\":13,\"size\":\"22.9M\",\"name\":\"geeks$s\",\"count\":2,\"exists\":true,\"expectedInsertions\":10000000}"],"message":"Request success.","status":1,"timestamp":"2020-04-30T12:02:24.791","total":1}
+2020-04-30 12:41:16,660 INFO  [http-nio-8097-exec-7] 127.0.0.1 ==>> "POST /infoAll() HTTP/1.1" 29ms <<== {"data":["{\"falseProbability\":0.00010,\"hashIterations\":13,\"size\":\"22.9M\",\"name\":\"geeks$s\",\"count\":2,\"exists\":true,\"expectedInsertions\":10000000}"],"message":"Request success.","status":1,"timestamp":"2020-04-30T12:41:16.66","total":1}
+2020-04-30 12:41:24,985 INFO  [http-nio-8097-exec-8] 127.0.0.1 ==>> "POST /infoAll() HTTP/1.1" 22ms <<== {"data":["{\"falseProbability\":0.00010,\"hashIterations\":13,\"size\":\"22.9M\",\"name\":\"geeks$s\",\"count\":2,\"exists\":true,\"expectedInsertions\":10000000}"],"message":"Request success.","status":1,"timestamp":"2020-04-30T12:41:24.985","total":1}
+2020-04-30 12:41:26,868 INFO  [http-nio-8097-exec-9] 127.0.0.1 ==>> "POST /infoAll() HTTP/1.1" 25ms <<== {"data":["{\"falseProbability\":0.00010,\"hashIterations\":13,\"size\":\"22.9M\",\"name\":\"geeks$s\",\"count\":2,\"exists\":true,\"expectedInsertions\":10000000}"],"message":"Request success.","status":1,"timestamp":"2020-04-30T12:41:26.868","total":1}
+2020-04-30 12:51:42,906 INFO o.s.s.c.ThreadPoolTaskExecutor [Thread-21] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 12:51:42,971 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [Thread-21] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-30 12:51:42,975 INFO c.z.h.HikariDataSource [Thread-21] HikariPool-1 - Shutdown initiated...
+2020-04-30 12:51:42,981 INFO c.z.h.HikariDataSource [Thread-21] HikariPool-1 - Shutdown completed.
+2020-04-30 12:51:46,394 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e951807b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:51:46,552 INFO c.s.b.Application [main] No active profile set, falling back to default profiles: default
+2020-04-30 12:51:47,181 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-30 12:51:47,253 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 65ms. Found 1 repository interfaces.
+2020-04-30 12:51:47,509 INFO o.s.c.c.s.GenericScope [main] BeanFactory id=27bf34d1-842e-3cd4-bb9c-ce4365c5f4de
+2020-04-30 12:51:47,606 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cd377d7e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:51:47,697 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$65e545b8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:51:47,703 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:51:47,706 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@28b523a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:51:47,710 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$8ab9e86a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:51:47,717 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:51:47,734 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e951807b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:51:48,051 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8097 (http)
+2020-04-30 12:51:48,159 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization completed in 1597 ms
+2020-04-30 12:51:48,283 WARN c.n.c.s.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+2020-04-30 12:51:48,284 INFO c.n.c.s.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-30 12:51:48,295 INFO c.n.c.DynamicPropertyFactory [main] DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@782ac148
+2020-04-30 12:51:48,809 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2020-04-30 12:51:48,963 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-04-30 12:51:49,005 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-30 12:51:49,063 INFO o.h.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2020-04-30 12:51:49,065 INFO o.h.c.Environment [main] HHH000206: hibernate.properties not found
+2020-04-30 12:51:49,188 INFO o.h.a.c.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-04-30 12:51:49,310 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-30 12:51:50,709 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-30 12:51:51,715 INFO o.r.Version [main] Redisson 3.12.5
+2020-04-30 12:51:51,917 INFO o.r.c.ClusterConnectionManager [main] Redis cluster nodes configuration got from /172.11.104.101:7000:
+01c1a7607b6d2e289cd8b2869f5a152b02fa7bc0 172.11.104.106:7000@17000 slave f5f1f75e664bd99854f99bb59bdb0b226103eb7b 0 1588222324091 5 connected
+7302f69e6ee4c26f6e7f2b1a4cc65bdc5fb93978 172.11.104.106:7001@17001 master - 0 1588222323000 4 connected 10923-16383
+2c66171961324137f73c540faa6ec6e90d649afe 172.11.104.103:7000@17000 slave af0fd0e44d805d19269bd905ec081b11ab6c923e 0 1588222325094 3 connected
+f5f1f75e664bd99854f99bb59bdb0b226103eb7b 172.11.104.103:7001@17001 master - 0 1588222326098 2 connected 5461-10922
+af0fd0e44d805d19269bd905ec081b11ab6c923e 172.11.104.101:7000@17000 myself,master - 0 1588222320000 1 connected 0-5460
+3a21d3289e2912b13f084b640bd66c5cc7753c15 172.11.104.101:7001@17001 slave 7302f69e6ee4c26f6e7f2b1a4cc65bdc5fb93978 0 1588222323089 6 connected
+
+2020-04-30 12:51:51,982 INFO o.r.c.ClusterConnectionManager [redisson-netty-2-2] slaves: [redis://172.11.104.103:7000] added for slot ranges: [[0-5460]]
+2020-04-30 12:51:51,999 INFO o.r.c.ClusterConnectionManager [redisson-netty-2-5] slaves: [redis://172.11.104.101:7001] added for slot ranges: [[10923-16383]]
+2020-04-30 12:51:52,009 INFO o.r.c.p.PubSubConnectionPool [redisson-netty-2-18] 1 connections initialized for /172.11.104.103:7000
+2020-04-30 12:51:52,012 INFO o.r.c.ClusterConnectionManager [redisson-netty-2-4] slaves: [redis://172.11.104.106:7000] added for slot ranges: [[5461-10922]]
+2020-04-30 12:51:52,033 INFO o.r.c.p.MasterPubSubConnectionPool [redisson-netty-2-7] 1 connections initialized for /172.11.104.103:7001
+2020-04-30 12:51:52,034 INFO o.r.c.p.MasterPubSubConnectionPool [redisson-netty-2-29] 1 connections initialized for /172.11.104.106:7001
+2020-04-30 12:51:52,035 INFO o.r.c.p.PubSubConnectionPool [redisson-netty-2-26] 1 connections initialized for /172.11.104.106:7000
+2020-04-30 12:51:52,035 INFO o.r.c.p.SlaveConnectionPool [redisson-netty-2-26] 24 connections initialized for /172.11.104.106:7000
+2020-04-30 12:51:52,037 INFO o.r.c.p.PubSubConnectionPool [redisson-netty-2-14] 1 connections initialized for /172.11.104.101:7001
+2020-04-30 12:51:52,037 INFO o.r.c.p.MasterPubSubConnectionPool [redisson-netty-2-15] 1 connections initialized for /172.11.104.101:7000
+2020-04-30 12:51:52,042 INFO o.r.c.ClusterConnectionManager [redisson-netty-2-18] master: redis://172.11.104.106:7001 added for slot ranges: [[10923-16383]]
+2020-04-30 12:51:52,042 INFO o.r.c.ClusterConnectionManager [redisson-netty-2-16] master: redis://172.11.104.103:7001 added for slot ranges: [[5461-10922]]
+2020-04-30 12:51:52,042 INFO o.r.c.p.MasterConnectionPool [redisson-netty-2-18] 24 connections initialized for /172.11.104.106:7001
+2020-04-30 12:51:52,042 INFO o.r.c.p.MasterConnectionPool [redisson-netty-2-16] 24 connections initialized for /172.11.104.103:7001
+2020-04-30 12:51:52,043 INFO o.r.c.p.SlaveConnectionPool [redisson-netty-2-18] 24 connections initialized for /172.11.104.103:7000
+2020-04-30 12:51:52,043 INFO o.r.c.p.SlaveConnectionPool [redisson-netty-2-18] 24 connections initialized for /172.11.104.101:7001
+2020-04-30 12:51:52,046 INFO o.r.c.ClusterConnectionManager [redisson-netty-2-22] master: redis://172.11.104.101:7000 added for slot ranges: [[0-5460]]
+2020-04-30 12:51:52,046 INFO o.r.c.p.MasterConnectionPool [redisson-netty-2-22] 24 connections initialized for /172.11.104.101:7000
+2020-04-30 12:51:52,108 DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource [main] @org.springframework.security.access.prepost.PreAuthorize(value=hasAuthority('ROLE_NORMAL')) found on specific method: public com.singhand.bloomFilter.vo.DataPackage com.singhand.bloomFilter.controller.BloomFilterController.info(java.lang.String)
+2020-04-30 12:51:52,116 DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource [main] Caching method [CacheKey[com.singhand.bloomFilter.controller.BloomFilterController; public com.singhand.bloomFilter.vo.DataPackage com.singhand.bloomFilter.controller.BloomFilterController.info(java.lang.String)]] with attributes [[authorize: 'hasAuthority('ROLE_NORMAL')', filter: 'null', filterTarget: 'null']]
+2020-04-30 12:51:52,127 DEBUG o.s.s.a.i.a.MethodSecurityInterceptor [main] Validated configuration attributes
+2020-04-30 12:51:52,131 DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource [main] @org.springframework.security.access.prepost.PreAuthorize(value=hasAuthority('ROLE_NORMAL')) found on specific method: public com.singhand.bloomFilter.vo.DataPackage com.singhand.bloomFilter.controller.BloomFilterController.del(java.lang.String)
+2020-04-30 12:51:52,131 DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource [main] Caching method [CacheKey[com.singhand.bloomFilter.controller.BloomFilterController; public com.singhand.bloomFilter.vo.DataPackage com.singhand.bloomFilter.controller.BloomFilterController.del(java.lang.String)]] with attributes [[authorize: 'hasAuthority('ROLE_NORMAL')', filter: 'null', filterTarget: 'null']]
+2020-04-30 12:51:52,132 DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource [main] @org.springframework.security.access.prepost.PreAuthorize(value=hasAuthority('ROLE_NORMAL')) found on specific method: public com.singhand.bloomFilter.vo.DataPackage com.singhand.bloomFilter.controller.BloomFilterController.infoAll()
+2020-04-30 12:51:52,132 DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource [main] Caching method [CacheKey[com.singhand.bloomFilter.controller.BloomFilterController; public com.singhand.bloomFilter.vo.DataPackage com.singhand.bloomFilter.controller.BloomFilterController.infoAll()]] with attributes [[authorize: 'hasAuthority('ROLE_NORMAL')', filter: 'null', filterTarget: 'null']]
+2020-04-30 12:51:52,132 DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource [main] @org.springframework.security.access.prepost.PreAuthorize(value=hasAuthority('ROLE_NORMAL')) found on specific method: public com.singhand.bloomFilter.vo.DataPackage com.singhand.bloomFilter.controller.BloomFilterController.add(java.lang.String,java.lang.String)
+2020-04-30 12:51:52,133 DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource [main] Caching method [CacheKey[com.singhand.bloomFilter.controller.BloomFilterController; public com.singhand.bloomFilter.vo.DataPackage com.singhand.bloomFilter.controller.BloomFilterController.add(java.lang.String,java.lang.String)]] with attributes [[authorize: 'hasAuthority('ROLE_NORMAL')', filter: 'null', filterTarget: 'null']]
+2020-04-30 12:51:52,133 DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource [main] @org.springframework.security.access.prepost.PreAuthorize(value=hasAuthority('ROLE_NORMAL')) found on specific method: public synchronized com.singhand.bloomFilter.vo.DataPackage com.singhand.bloomFilter.controller.BloomFilterController.contains(java.lang.String,java.lang.String)
+2020-04-30 12:51:52,134 DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource [main] Caching method [CacheKey[com.singhand.bloomFilter.controller.BloomFilterController; public synchronized com.singhand.bloomFilter.vo.DataPackage com.singhand.bloomFilter.controller.BloomFilterController.contains(java.lang.String,java.lang.String)]] with attributes [[authorize: 'hasAuthority('ROLE_NORMAL')', filter: 'null', filterTarget: 'null']]
+2020-04-30 12:51:52,134 DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource [main] @org.springframework.security.access.prepost.PreAuthorize(value=hasAuthority('ROLE_NORMAL')) found on specific method: public com.singhand.bloomFilter.vo.DataPackage com.singhand.bloomFilter.controller.BloomFilterController.create(java.lang.String)
+2020-04-30 12:51:52,134 DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource [main] Caching method [CacheKey[com.singhand.bloomFilter.controller.BloomFilterController; public com.singhand.bloomFilter.vo.DataPackage com.singhand.bloomFilter.controller.BloomFilterController.create(java.lang.String)]] with attributes [[authorize: 'hasAuthority('ROLE_NORMAL')', filter: 'null', filterTarget: 'null']]
+2020-04-30 12:51:52,286 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression 'permitAll', for Ant [pattern='/**', OPTIONS]
+2020-04-30 12:51:52,289 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression 'permitAll', for Ant [pattern='/authentication/**', POST]
+2020-04-30 12:51:52,289 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression 'authenticated', for Ant [pattern='/**', POST]
+2020-04-30 12:51:52,289 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression 'authenticated', for Ant [pattern='/**', PUT]
+2020-04-30 12:51:52,289 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression 'authenticated', for Ant [pattern='/**', DELETE]
+2020-04-30 12:51:52,290 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression 'authenticated', for Ant [pattern='/**', GET]
+2020-04-30 12:51:52,292 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor [main] Validated configuration attributes
+2020-04-30 12:51:52,293 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor [main] Validated configuration attributes
+2020-04-30 12:51:52,296 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7fd7965b, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c294a17, org.springframework.security.web.header.HeaderWriterFilter@5cdf2c83, org.springframework.security.web.authentication.logout.LogoutFilter@56c26b21, com.singhand.bloomFilter.filter.JwtTokenFilter@70ccb3bf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47a72c32, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@15b882a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9742012, org.springframework.security.web.session.SessionManagementFilter@581cb879, org.springframework.security.web.access.ExceptionTranslationFilter@35c83c56, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1297cf8]
+2020-04-30 12:51:52,312 WARN c.n.c.s.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+2020-04-30 12:51:52,312 INFO c.n.c.s.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-30 12:51:52,536 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 12:51:52,610 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-30 12:51:53,022 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 18 endpoint(s) beneath base path '/actuator'
+2020-04-30 12:51:53,156 DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$EnableGlobalAuthenticationAutowiredConfigurer [main] Eagerly initializing {webSecurityConfig=com.singhand.bloomFilter.conf.WebSecurityConfig$$EnhancerBySpringCGLIB$$6ac4fd45@2fafa9bf}
+2020-04-30 12:51:53,233 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8097 (http) with context path ''
+2020-04-30 12:51:53,236 INFO c.s.b.Application [main] Started Application in 7.476 seconds (JVM running for 8.369)
+2020-04-30 12:51:53,326 INFO o.s.w.s.DispatcherServlet [RMI TCP Connection(2)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2020-04-30 12:51:53,343 INFO o.s.w.s.DispatcherServlet [RMI TCP Connection(2)-127.0.0.1] Completed initialization in 17 ms
+2020-04-30 12:51:56,563 DEBUG o.s.s.w.FilterChainProxy [http-nio-8097-exec-1] /infoAll at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2020-04-30 12:51:56,564 DEBUG o.s.s.w.FilterChainProxy [http-nio-8097-exec-1] /infoAll at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2020-04-30 12:51:56,567 DEBUG o.s.s.w.FilterChainProxy [http-nio-8097-exec-1] /infoAll at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2020-04-30 12:51:56,569 DEBUG o.s.s.w.FilterChainProxy [http-nio-8097-exec-1] /infoAll at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+2020-04-30 12:51:56,569 DEBUG o.s.s.w.u.m.OrRequestMatcher [http-nio-8097-exec-1] Trying to match using Ant [pattern='/logout', GET]
+2020-04-30 12:51:56,570 DEBUG o.s.s.w.u.m.AntPathRequestMatcher [http-nio-8097-exec-1] Request 'POST /infoAll' doesn't match 'GET /logout'
+2020-04-30 12:51:56,570 DEBUG o.s.s.w.u.m.OrRequestMatcher [http-nio-8097-exec-1] Trying to match using Ant [pattern='/logout', POST]
+2020-04-30 12:51:56,571 DEBUG o.s.s.w.u.m.AntPathRequestMatcher [http-nio-8097-exec-1] Checking match of request : '/infoAll'; against '/logout'
+2020-04-30 12:51:56,571 DEBUG o.s.s.w.u.m.OrRequestMatcher [http-nio-8097-exec-1] Trying to match using Ant [pattern='/logout', PUT]
+2020-04-30 12:51:56,572 DEBUG o.s.s.w.u.m.AntPathRequestMatcher [http-nio-8097-exec-1] Request 'POST /infoAll' doesn't match 'PUT /logout'
+2020-04-30 12:51:56,572 DEBUG o.s.s.w.u.m.OrRequestMatcher [http-nio-8097-exec-1] Trying to match using Ant [pattern='/logout', DELETE]
+2020-04-30 12:51:56,573 DEBUG o.s.s.w.u.m.AntPathRequestMatcher [http-nio-8097-exec-1] Request 'POST /infoAll' doesn't match 'DELETE /logout'
+2020-04-30 12:51:56,573 DEBUG o.s.s.w.u.m.OrRequestMatcher [http-nio-8097-exec-1] No matches found
+2020-04-30 12:51:56,574 DEBUG o.s.s.w.FilterChainProxy [http-nio-8097-exec-1] /infoAll at position 5 of 11 in additional filter chain; firing Filter: 'JwtTokenFilter'
+2020-04-30 12:51:56,887 INFO o.h.h.i.QueryTranslatorFactoryInitiator [http-nio-8097-exec-1] HHH000397: Using ASTQueryTranslatorFactory
+2020-04-30 12:51:57,080 DEBUG o.s.s.w.FilterChainProxy [http-nio-8097-exec-1] /infoAll at position 6 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2020-04-30 12:51:57,080 DEBUG o.s.s.w.FilterChainProxy [http-nio-8097-exec-1] /infoAll at position 7 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2020-04-30 12:51:57,081 DEBUG o.s.s.w.FilterChainProxy [http-nio-8097-exec-1] /infoAll at position 8 of 11 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2020-04-30 12:51:57,082 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8097-exec-1] SecurityContextHolder not populated with anonymous token, as it already contained: 'org.springframework.security.authentication.UsernamePasswordAuthenticationToken@7567525b: Principal: com.singhand.bloomFilter.model.User@7732ea17; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_NORMAL, ROLE_ADMIN'
+2020-04-30 12:51:57,082 DEBUG o.s.s.w.FilterChainProxy [http-nio-8097-exec-1] /infoAll at position 9 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2020-04-30 12:51:57,083 DEBUG o.s.s.w.a.s.CompositeSessionAuthenticationStrategy [http-nio-8097-exec-1] Delegating to org.springframework.security.web.authentication.session.ChangeSessionIdAuthenticationStrategy@215efb16
+2020-04-30 12:51:57,083 DEBUG o.s.s.w.FilterChainProxy [http-nio-8097-exec-1] /infoAll at position 10 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2020-04-30 12:51:57,083 DEBUG o.s.s.w.FilterChainProxy [http-nio-8097-exec-1] /infoAll at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2020-04-30 12:51:57,084 DEBUG o.s.s.w.u.m.AntPathRequestMatcher [http-nio-8097-exec-1] Request 'POST /infoAll' doesn't match 'OPTIONS /**'
+2020-04-30 12:51:57,085 DEBUG o.s.s.w.u.m.AntPathRequestMatcher [http-nio-8097-exec-1] Checking match of request : '/infoAll'; against '/authentication/**'
+2020-04-30 12:51:57,085 DEBUG o.s.s.w.u.m.AntPathRequestMatcher [http-nio-8097-exec-1] Request '/infoAll' matched by universal pattern '/**'
+2020-04-30 12:51:57,086 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor [http-nio-8097-exec-1] Secure object: FilterInvocation: URL: /infoAll; Attributes: [authenticated]
+2020-04-30 12:51:57,086 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor [http-nio-8097-exec-1] Previously Authenticated: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@7567525b: Principal: com.singhand.bloomFilter.model.User@7732ea17; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_NORMAL, ROLE_ADMIN
+2020-04-30 12:51:57,093 DEBUG o.s.s.a.v.AffirmativeBased [http-nio-8097-exec-1] Voter: org.springframework.security.web.access.expression.WebExpressionVoter@4ae2a157, returned: 1
+2020-04-30 12:51:57,094 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor [http-nio-8097-exec-1] Authorization successful
+2020-04-30 12:51:57,094 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor [http-nio-8097-exec-1] RunAsManager did not change Authentication object
+2020-04-30 12:51:57,094 DEBUG o.s.s.w.FilterChainProxy [http-nio-8097-exec-1] /infoAll reached end of additional filter chain; proceeding with original chain
+2020-04-30 12:51:57,124 DEBUG o.s.s.a.i.a.MethodSecurityInterceptor [http-nio-8097-exec-1] Secure object: ReflectiveMethodInvocation: public com.singhand.bloomFilter.vo.DataPackage com.singhand.bloomFilter.controller.BloomFilterController.infoAll(); target is of class [com.singhand.bloomFilter.controller.BloomFilterController]; Attributes: [[authorize: 'hasAuthority('ROLE_NORMAL')', filter: 'null', filterTarget: 'null']]
+2020-04-30 12:51:57,125 DEBUG o.s.s.a.i.a.MethodSecurityInterceptor [http-nio-8097-exec-1] Previously Authenticated: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@7567525b: Principal: com.singhand.bloomFilter.model.User@7732ea17; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_NORMAL, ROLE_ADMIN
+2020-04-30 12:51:57,127 DEBUG o.s.s.a.v.AffirmativeBased [http-nio-8097-exec-1] Voter: org.springframework.security.access.prepost.PreInvocationAuthorizationAdviceVoter@3be64baa, returned: 1
+2020-04-30 12:51:57,127 DEBUG o.s.s.a.i.a.MethodSecurityInterceptor [http-nio-8097-exec-1] Authorization successful
+2020-04-30 12:51:57,128 DEBUG o.s.s.a.i.a.MethodSecurityInterceptor [http-nio-8097-exec-1] RunAsManager did not change Authentication object
+2020-04-30 12:51:57,292 INFO  [http-nio-8097-exec-1] 127.0.0.1 ==>> "POST /infoAll() HTTP/1.1" 159ms <<== {"data":["{\"falseProbability\":0.00010,\"hashIterations\":13,\"size\":\"22.9M\",\"name\":\"geeks$s\",\"count\":2,\"exists\":true,\"expectedInsertions\":10000000}"],"message":"Request success.","status":1,"timestamp":"2020-04-30T12:51:57.283","total":1}
+2020-04-30 12:51:57,320 DEBUG o.s.s.w.h.w.HstsHeaderWriter [http-nio-8097-exec-1] Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@46bf9bd2
+2020-04-30 12:51:57,330 DEBUG o.s.s.w.a.ExceptionTranslationFilter [http-nio-8097-exec-1] Chain processed normally
+2020-04-30 12:51:57,330 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter [http-nio-8097-exec-1] SecurityContextHolder now cleared, as request processing completed
+2020-04-30 12:52:44,108 INFO o.s.s.c.ThreadPoolTaskExecutor [Thread-20] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 12:52:44,197 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [Thread-20] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-30 12:52:44,201 INFO c.z.h.HikariDataSource [Thread-20] HikariPool-1 - Shutdown initiated...
+2020-04-30 12:52:44,203 INFO c.z.h.HikariDataSource [Thread-20] HikariPool-1 - Shutdown completed.
+2020-04-30 12:52:47,176 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d1468fa8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:52:47,342 INFO c.s.b.Application [main] No active profile set, falling back to default profiles: default
+2020-04-30 12:52:47,938 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-30 12:52:48,008 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 63ms. Found 1 repository interfaces.
+2020-04-30 12:52:48,266 INFO o.s.c.c.s.GenericScope [main] BeanFactory id=27bf34d1-842e-3cd4-bb9c-ce4365c5f4de
+2020-04-30 12:52:48,361 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b52c8cab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:52:48,452 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$4dda54e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:52:48,458 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:52:48,461 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@545d2560' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:52:48,465 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$72aef797] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:52:48,472 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:52:48,490 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d1468fa8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-30 12:52:48,794 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8097 (http)
+2020-04-30 12:52:48,902 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization completed in 1549 ms
+2020-04-30 12:52:49,024 WARN c.n.c.s.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+2020-04-30 12:52:49,025 INFO c.n.c.s.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-30 12:52:49,034 INFO c.n.c.DynamicPropertyFactory [main] DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@40016ce1
+2020-04-30 12:52:49,537 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2020-04-30 12:52:49,695 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-04-30 12:52:49,737 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-30 12:52:49,797 INFO o.h.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2020-04-30 12:52:49,799 INFO o.h.c.Environment [main] HHH000206: hibernate.properties not found
+2020-04-30 12:52:49,923 INFO o.h.a.c.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-04-30 12:52:50,047 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-30 12:52:50,837 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-30 12:52:51,813 INFO o.r.Version [main] Redisson 3.12.5
+2020-04-30 12:52:52,020 INFO o.r.c.ClusterConnectionManager [main] Redis cluster nodes configuration got from /172.11.104.101:7000:
+01c1a7607b6d2e289cd8b2869f5a152b02fa7bc0 172.11.104.106:7000@17000 slave f5f1f75e664bd99854f99bb59bdb0b226103eb7b 0 1588222382000 5 connected
+7302f69e6ee4c26f6e7f2b1a4cc65bdc5fb93978 172.11.104.106:7001@17001 master - 0 1588222384000 4 connected 10923-16383
+2c66171961324137f73c540faa6ec6e90d649afe 172.11.104.103:7000@17000 slave af0fd0e44d805d19269bd905ec081b11ab6c923e 0 1588222384218 3 connected
+f5f1f75e664bd99854f99bb59bdb0b226103eb7b 172.11.104.103:7001@17001 master - 0 1588222386225 2 connected 5461-10922
+af0fd0e44d805d19269bd905ec081b11ab6c923e 172.11.104.101:7000@17000 myself,master - 0 1588222385000 1 connected 0-5460
+3a21d3289e2912b13f084b640bd66c5cc7753c15 172.11.104.101:7001@17001 slave 7302f69e6ee4c26f6e7f2b1a4cc65bdc5fb93978 0 1588222385220 6 connected
+
+2020-04-30 12:52:52,063 INFO o.r.c.ClusterConnectionManager [main] slaves: [redis://172.11.104.103:7000] added for slot ranges: [[0-5460]]
+2020-04-30 12:52:52,082 INFO o.r.c.p.PubSubConnectionPool [redisson-netty-2-31] 1 connections initialized for /172.11.104.103:7000
+2020-04-30 12:52:52,098 INFO o.r.c.p.MasterPubSubConnectionPool [redisson-netty-2-16] 1 connections initialized for /172.11.104.101:7000
+2020-04-30 12:52:52,103 INFO o.r.c.p.SlaveConnectionPool [redisson-netty-2-7] 24 connections initialized for /172.11.104.103:7000
+2020-04-30 12:52:52,109 INFO o.r.c.ClusterConnectionManager [redisson-netty-2-3] slaves: [redis://172.11.104.101:7001] added for slot ranges: [[10923-16383]]
+2020-04-30 12:52:52,115 INFO o.r.c.ClusterConnectionManager [redisson-netty-2-8] master: redis://172.11.104.101:7000 added for slot ranges: [[0-5460]]
+2020-04-30 12:52:52,120 INFO o.r.c.p.MasterConnectionPool [redisson-netty-2-8] 24 connections initialized for /172.11.104.101:7000
+2020-04-30 12:52:52,124 INFO o.r.c.p.PubSubConnectionPool [redisson-netty-2-13] 1 connections initialized for /172.11.104.101:7001
+2020-04-30 12:52:52,125 INFO o.r.c.p.MasterPubSubConnectionPool [redisson-netty-2-20] 1 connections initialized for /172.11.104.106:7001
+2020-04-30 12:52:52,130 INFO o.r.c.ClusterConnectionManager [redisson-netty-2-30] slaves: [redis://172.11.104.106:7000] added for slot ranges: [[5461-10922]]
+2020-04-30 12:52:52,133 INFO o.r.c.p.PubSubConnectionPool [redisson-netty-2-14] 1 connections initialized for /172.11.104.106:7000
+2020-04-30 12:52:52,139 INFO o.r.c.p.MasterConnectionPool [redisson-netty-2-23] 24 connections initialized for /172.11.104.103:7001
+2020-04-30 12:52:52,140 INFO o.r.c.p.SlaveConnectionPool [redisson-netty-2-24] 24 connections initialized for /172.11.104.101:7001
+2020-04-30 12:52:52,141 INFO o.r.c.p.SlaveConnectionPool [redisson-netty-2-28] 24 connections initialized for /172.11.104.106:7000
+2020-04-30 12:52:52,142 INFO o.r.c.ClusterConnectionManager [redisson-netty-2-26] master: redis://172.11.104.103:7001 added for slot ranges: [[5461-10922]]
+2020-04-30 12:52:52,142 INFO o.r.c.ClusterConnectionManager [redisson-netty-2-27] master: redis://172.11.104.106:7001 added for slot ranges: [[10923-16383]]
+2020-04-30 12:52:52,142 INFO o.r.c.p.MasterPubSubConnectionPool [redisson-netty-2-26] 1 connections initialized for /172.11.104.103:7001
+2020-04-30 12:52:52,142 INFO o.r.c.p.MasterConnectionPool [redisson-netty-2-27] 24 connections initialized for /172.11.104.106:7001
+2020-04-30 12:52:52,421 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a1d7832, org.springframework.security.web.context.SecurityContextPersistenceFilter@35920655, org.springframework.security.web.header.HeaderWriterFilter@52d68eb9, org.springframework.security.web.authentication.logout.LogoutFilter@20bc3e7f, com.singhand.bloomFilter.filter.JwtTokenFilter@3b28ab9b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27558dee, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@592fbd8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@639c5ab4, org.springframework.security.web.session.SessionManagementFilter@5cbf9aee, org.springframework.security.web.access.ExceptionTranslationFilter@13ac1657, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c7d83ff]
+2020-04-30 12:52:52,437 WARN c.n.c.s.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+2020-04-30 12:52:52,437 INFO c.n.c.s.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-30 12:52:52,633 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 12:52:52,684 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-30 12:52:53,092 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 18 endpoint(s) beneath base path '/actuator'
+2020-04-30 12:52:53,291 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8097 (http) with context path ''
+2020-04-30 12:52:53,294 INFO c.s.b.Application [main] Started Application in 6.729 seconds (JVM running for 7.591)
+2020-04-30 12:52:53,722 INFO o.s.w.s.DispatcherServlet [RMI TCP Connection(1)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2020-04-30 12:52:53,736 INFO o.s.w.s.DispatcherServlet [RMI TCP Connection(1)-127.0.0.1] Completed initialization in 13 ms
+2020-04-30 12:53:00,212 INFO o.h.h.i.QueryTranslatorFactoryInitiator [http-nio-8097-exec-1] HHH000397: Using ASTQueryTranslatorFactory
+2020-04-30 12:53:00,690 INFO  [http-nio-8097-exec-1] 127.0.0.1 ==>> "POST /infoAll() HTTP/1.1" 166ms <<== {"data":["{\"falseProbability\":0.00010,\"hashIterations\":13,\"size\":\"22.9M\",\"name\":\"geeks$s\",\"count\":2,\"exists\":true,\"expectedInsertions\":10000000}"],"message":"Request success.","status":1,"timestamp":"2020-04-30T12:53:00.681","total":1}
