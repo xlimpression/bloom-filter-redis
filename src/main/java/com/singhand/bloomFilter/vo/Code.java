@@ -9,7 +9,7 @@ public enum Code {
 			"('topic' should end with '$l' or '$m' or '$s', and 'url' should not be empty)."),
 	no_such_topic(402, "The bloom filter of the requested topic does not exist. " +
 			"Please call the interface /create to create the bloom filter first."),
-	such_topic_already_exist(403,  "The bloom filter of requested topic already exists."),
+	such_topic_already_exist(407,  "The bloom filter of requested topic already exists."),
 	success(1, "Request success.");
 
 	private int code;

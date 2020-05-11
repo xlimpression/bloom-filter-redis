@@ -1,5 +1,12 @@
-2020-04-30 14:52:26,832 INFO  [http-nio-8097-exec-3] 127.0.0.1 ==>> "POST /infoAll() HTTP/1.1" 23ms <<== {"data":["{\"falseProbability\":0.00010,\"hashIterations\":13,\"size\":\"22.9M\",\"name\":\"geeks$s\",\"count\":2,\"exists\":true,\"expectedInsertions\":10000000}"],"message":"Request success.","status":1,"timestamp":"2020-04-30T14:52:26.832","total":1}
-2020-04-30 14:52:28,694 INFO  [http-nio-8097-exec-4] 127.0.0.1 ==>> "POST /infoAll() HTTP/1.1" 37ms <<== {"data":["{\"falseProbability\":0.00010,\"hashIterations\":13,\"size\":\"22.9M\",\"name\":\"geeks$s\",\"count\":2,\"exists\":true,\"expectedInsertions\":10000000}"],"message":"Request success.","status":1,"timestamp":"2020-04-30T14:52:28.693","total":1}
-2020-04-30 14:52:31,509 INFO  [http-nio-8097-exec-5] 127.0.0.1 ==>> "POST /infoAll() HTTP/1.1" 22ms <<== {"data":["{\"falseProbability\":0.00010,\"hashIterations\":13,\"size\":\"22.9M\",\"name\":\"geeks$s\",\"count\":2,\"exists\":true,\"expectedInsertions\":10000000}"],"message":"Request success.","status":1,"timestamp":"2020-04-30T14:52:31.509","total":1}
-2020-04-30 14:52:32,258 INFO  [http-nio-8097-exec-6] 127.0.0.1 ==>> "POST /infoAll() HTTP/1.1" 19ms <<== {"data":["{\"falseProbability\":0.00010,\"hashIterations\":13,\"size\":\"22.9M\",\"name\":\"geeks$s\",\"count\":2,\"exists\":true,\"expectedInsertions\":10000000}"],"message":"Request success.","status":1,"timestamp":"2020-04-30T14:52:32.258","total":1}
-2020-04-30 14:52:41,616 INFO  [http-nio-8097-exec-5] 127.0.0.1 ==>> "POST /infoAll() HTTP/1.1" 23ms <<== {"data":["{\"falseProbability\":0.00010,\"hashIterations\":13,\"size\":\"22.9M\",\"name\":\"geeks$s\",\"count\":2,\"exists\":true,\"expectedInsertions\":10000000}"],"message":"Request success.","status":1,"timestamp":"2020-04-30T14:52:41.616","total":1}
+2020-05-07 11:31:55,021 ERROR o.r.c.ClusterConnectionManager [redisson-timer-4-1] Can't execute CLUSTER_NODES with /172.11.104.106:7001
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (CLUSTER NODES), params: [], Redis client: [addr=redis://172.11.104.106:7001]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:207) ~[redisson-3.12.5.jar:3.12.5]
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:682) [netty-common-4.1.36.Final.jar:4.1.36.Final]
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:757) [netty-common-4.1.36.Final.jar:4.1.36.Final]
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:485) [netty-common-4.1.36.Final.jar:4.1.36.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.36.Final.jar:4.1.36.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_231]
+2020-05-07 11:53:42,641 INFO o.s.s.c.ThreadPoolTaskExecutor [Thread-19] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-07 11:54:07,619 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [Thread-19] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 11:54:09,740 INFO c.z.h.HikariDataSource [Thread-19] HikariPool-1 - Shutdown initiated...
+2020-05-07 11:54:09,743 INFO c.z.h.HikariDataSource [Thread-19] HikariPool-1 - Shutdown completed.

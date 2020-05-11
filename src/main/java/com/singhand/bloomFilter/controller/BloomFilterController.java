@@ -44,7 +44,7 @@ public class BloomFilterController {
 
 	@ResponseBody
 	@RequestMapping(value ="/create", method= RequestMethod.POST)
-	@PreAuthorize("hasAuthority('ROLE_NORMAL')")
+	@PreAuthorize("hasAuthority('ROLE_ADMIN')")
 	public DataPackage<Boolean> create(@RequestParam String topic){
 		Scale scale = findScale(topic);
 		if(Objects.isNull(scale)){
@@ -61,7 +61,7 @@ public class BloomFilterController {
 
 	@ResponseBody
 	@RequestMapping(value ="/del", method= RequestMethod.POST)
-	@PreAuthorize("hasAuthority('ROLE_NORMAL')")
+	@PreAuthorize("hasAuthority('ROLE_ADMIN')")
 	public DataPackage<Boolean> del(@RequestParam String topic){
 		Scale scale = findScale(topic);
 		if(Objects.isNull(scale)){
