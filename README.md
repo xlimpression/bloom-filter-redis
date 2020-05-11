@@ -151,7 +151,7 @@ Bloom Filter 所有接口调用均需要携带有相应角色权限的Token， �
 
  
 
-#### 1. 创建Bloom Filter
+#### （一） 创建Bloom Filter
 
 <table border="0" cellspacing="1" style="text-align:center">
     <tr>
@@ -227,7 +227,7 @@ Bloom Filter 所有接口调用均需要携带有相应角色权限的Token， �
 
 <img src="https://i.loli.net/2020/05/07/Q3t1LwS4IPNCOZV.png" alt="avatar"  />
 
- 说明：`nicholas` 用户不具备 `ROLE_ADMIN`权限。
+**说明**：`nicholas` 用户不具备 `ROLE_ADMIN`权限。
 
 
 
@@ -237,7 +237,7 @@ Bloom Filter 所有接口调用均需要携带有相应角色权限的Token， �
 
 <img src="https://i.loli.net/2020/05/07/o2w3eWtuEhRBisL.png" alt="avatar"  />
 
-说明：创建成功，创建成功时`info`字段返回已经创建的Bloom Filter描述`Json`字符串，该字符串各字段说明如下
+**说明**：创建成功，创建成功时`info`字段返回已经创建的Bloom Filter描述`Json`字符串，该字符串各字段说明如下
 
 |         字段名         | 字段类型 |            描述            |
 | :--------------------: | :------: | :------------------------: |
@@ -255,5 +255,396 @@ Bloom Filter 所有接口调用均需要携带有相应角色权限的Token， �
 
 <img src="https://i.loli.net/2020/05/07/y7kUwfBgJZbjOIQ.png" alt="avatar"  />
 
-说明： Topic 为`twitter$s` 的Bloom Filter已经存在。
+**说明**： Topic 为`twitter$s` 的Bloom Filter已经存在。
 
+
+
+#### （二）查看某个Topic 的Bloom Filter详情
+
+<table border="0" cellspacing="1" style="text-align:center">
+    <tr>
+        <th>接口</th>
+        <td> /info </td>
+    </tr>
+	<tr>
+        <th>方法</th>
+        <td> post </td>
+    </tr>
+    <tr>
+        <th>描述</th>
+        <td>通过调用此接口查看某Topic下的Bloom Filter详情</th>
+    </tr>
+	<tr>
+        <th>注意事项</th>
+        <td>调用此接口前确保相应Topic下的Bloom Filter存在</th>
+    </tr>
+	<tr>
+        <th>需要解色权限</th>
+        <td>ROLE_NORMAL</th>
+    </tr>
+	<tr>
+        <td> <b>参数 </b></td>
+        <td>
+        <table style="text-align:center">
+            <tr>
+                <th>名称</th>
+                <th>类型</th>
+                <th>是否必须</th>
+                <th>描述</th>
+            </tr>
+            <tr>
+                <td>topic</td>
+                <td>字符串</td>
+                <td>是</td>
+                <td>需要查看的Bloom Filter的Topic</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+	<tr>
+        <td><b>可能返回的自定义状态码</b></td>
+        <td>1 、401 、402</th>
+    </tr>
+	<tr>
+        <td><b>请求成功时data字段说明</b></td>
+        <td>
+        <table style="text-align:center">
+            <tr>
+                <th>类型</th>
+                <th>描述</th>
+            </tr>
+            <tr>
+                <td>字符串</td>
+                <td>描述该Bloom Filter详情的字符串</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+</table>
+
+##### 实例 4
+
+`nicholas`用户调用`info` 接口查看Topic 为 `facebook$s`的Bloom Filter.
+
+<img src="https://i.loli.net/2020/05/11/Y9cHnZIXw7jGvWu.png" alt="avatar"  />
+
+**说明**： Topic 为`facebook$s` 的Bloom Filter不存在。
+
+##### 实例 5 
+
+`nicholas`用户调用`infoAll` 接口查看Topic 为 `facebook$s`的Bloom Filter.
+
+<img src="https://i.loli.net/2020/05/11/vVXQguTr4zKUh7Y.png" alt="avatar"  />
+
+**说明**： 请求成功， `data` 字段返回该Bloom Filter的详细信息。
+
+
+
+#### （三）查看所有存在的Bloom Filter详情
+
+<table border="0" cellspacing="1" style="text-align:center">
+    <tr>
+        <th>接口</th>
+        <td> /infoAll </td>
+    </tr>
+	<tr>
+        <th>方法</th>
+        <td> post </td>
+    </tr>
+    <tr>
+        <th>描述</th>
+        <td>查看系统所有存在的Bloom Filter详情</th>
+    </tr>
+	<tr>
+        <th>需要解色权限</th>
+        <td>ROLE_NORMAL</th>
+    </tr>
+	<tr>
+        <td><b>可能返回的自定义状态码</b></td>
+        <td>1</th>
+    </tr>
+	<tr>
+        <td><b>请求成功时data字段说明</b></td>
+        <td>
+        <table style="text-align:center">
+            <tr>
+                <th>类型</th>
+                <th>描述</th>
+            </tr>
+            <tr>
+                <td>字符串数组</td>
+                <td>数组的每一项为一个Bloom Filter描述</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+</table>
+
+##### 实例 6
+
+`nicholas`用户请求`info` 接口查看系统所有存在的Bloom Filter
+
+<img src="https://i.loli.net/2020/05/11/z6xCF7cShrilogq.png" alt="avatar"  />
+
+**说明** ： 系统中存在Topic 分别为`twitter$s` 和`geeks$s` 的Bloom Filter，返回数组中`data`数组第一项为关于Topic为`twitter$s`  的Bloom Filter的描述， 第二项为关于Topic为`geeks$s`   的Bloom Filter的描述。
+
+
+
+#### （四）删除Bloom Filter
+
+<table border="0" cellspacing="1" style="text-align:center">
+    <tr>
+        <th>接口</th>
+        <td> /del </td>
+    </tr>
+	<tr>
+        <th>方法</th>
+        <td> post </td>
+    </tr>
+    <tr>
+        <th>描述</th>
+        <td>通过调用此接口删除某Topic下的Bloom Filter</th>
+    </tr>
+	<tr>
+        <th>注意事项</th>
+        <td>调用此接口前确保相应Topic下的Bloom Filter存在</th>
+    </tr>
+	<tr>
+        <th>需要解色权限</th>
+        <td>ROLE_ADMIN</th>
+    </tr>
+	<tr>
+        <td> <b>参数 </b></td>
+        <td>
+        <table style="text-align:center">
+            <tr>
+                <th>名称</th>
+                <th>类型</th>
+                <th>是否必须</th>
+                <th>描述</th>
+            </tr>
+            <tr>
+                <td>topic</td>
+                <td>字符串</td>
+                <td>是</td>
+                <td>需要创建Bloom Filter的Topic</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+	<tr>
+        <td><b>可能返回的自定义状态码</b></td>
+        <td>1 、401 、402</th>
+    </tr>
+	<tr>
+        <td><b>请求成功时data字段说明</b></td>
+        <td>
+        <table style="text-align:center">
+            <tr>
+                <th>类型</th>
+                <th>描述</th>
+            </tr>
+            <tr>
+                <td>逻辑值（true 或 false）</td>
+                <td>为true时表示删除成功<br>为false时表示删除失败</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+</table>
+
+##### 实例 7
+
+通过调用 `infoAll` 接口返回系统中存在Topic分别为`twitter$s` 和`geeks$s`的Bloom Filter， 现`nicholas`用户请求`del` 接口删除Topic为`twitter$s` 的Bloom Filter.
+
+<img src="https://i.loli.net/2020/05/11/qLWsphQv8PIV5H4.png" alt="avatar"  />
+
+**说明** ： `nicholas`用户无`ROLE_ADMIN` 权限。
+
+##### 实例 8
+
+`geek`用户请求`del` 接口删除Topic为`twitter$s` 的Bloom Filter.
+
+<img src="https://i.loli.net/2020/05/11/bvhuIGTSnP5koVs.png" alt="avatar"  />
+
+**说明** ： Topic 为`twitter$s` 的Bloom Filter 删除成功， 再次调用 `infoAll` 接口， 发现系统中只存在Topic为`geeks$s`的Bloom Filter。
+
+#### （五）向Bloom Filter中添加条目
+
+<table border="0" cellspacing="1" style="text-align:center">
+    <tr>
+        <th>接口</th>
+        <td> /put </td>
+    </tr>
+	<tr>
+        <th>方法</th>
+        <td> post </td>
+    </tr>
+    <tr>
+        <th>描述</th>
+        <td>通过调用此接口向某Topic下的Bloom Filter添加条目</th>
+    </tr>
+	<tr>
+        <th>注意事项</th>
+        <td>调用此接口前确保相应Topic下的Bloom Filter存在</th>
+    </tr>
+	<tr>
+        <th>需要解色权限</th>
+        <td>ROLE_NORMAL</th>
+    </tr>
+	<tr>
+        <td> <b>参数 </b></td>
+        <td>
+        <table style="text-align:center">
+            <tr>
+                <th>名称</th>
+                <th>类型</th>
+                <th>是否必须</th>
+                <th>描述</th>
+            </tr>
+            <tr>
+                <td>topic</td>
+                <td>字符串</td>
+                <td>是</td>
+                <td>需要添加条目Bloom Filter的Topic</td>
+            </tr>
+            <tr>
+                <td>url</td>
+                <td>字符串</td>
+                <td>是</td>
+                <td>需要添加的条目</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+	<tr>
+        <td><b>可能返回的自定义状态码</b></td>
+        <td>1 、401 、402</th>
+    </tr>
+	<tr>
+        <td><b>请求成功时data字段说明</b></td>
+        <td>
+        <table style="text-align:center">
+            <tr>
+                <th>类型</th>
+                <th>描述</th>
+            </tr>
+            <tr>
+                <td>逻辑值（true 或 false）</td>
+                <td>为true时表示删添加成功<br>否则表示该条目在相应Bloom Filter中已经存在</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+</table>
+
+
+
+##### 实例 9
+
+用户`nicholas`调用/put接口，向Toipc为`geeks$s`的Bloom Filter中添加空字符串，或者不填写参数`url`.
+
+<img src="https://i.loli.net/2020/05/11/Z1qxQNeUP4hBVpJ.png" alt="avatar"  />
+
+**说明** ： 请求失败， 参数`url`不能为空。
+
+
+
+##### 实例 10
+
+用户`nicholas`调用/put接口，向Toipc为`geeks$s`的Bloom Filter中添加`"www.baidu.com"` 条目。
+
+<img src="https://i.loli.net/2020/05/11/C63lGt4Xdz5EhUO.png" alt="avatar"  />
+
+**说明** ： 添加成功。
+
+
+
+#### （六）判断某Bloom Filter中是否包含某条目
+
+<table border="0" cellspacing="1" style="text-align:center">
+    <tr>
+        <th>接口</th>
+        <td> /contains </td>
+    </tr>
+	<tr>
+        <th>方法</th>
+        <td> post </td>
+    </tr>
+    <tr>
+        <th>描述</th>
+        <td>通过调用此接口判断某Topic下的Bloom Filter是否包含某条目</th>
+    </tr>
+	<tr>
+        <th>注意事项</th>
+        <td>调用此接口前确保相应Topic下的Bloom Filter存在</th>
+    </tr>
+	<tr>
+        <th>需要解色权限</th>
+        <td>ROLE_NORMAL</th>
+    </tr>
+	<tr>
+        <td> <b>参数 </b></td>
+        <td>
+        <table style="text-align:center">
+            <tr>
+                <th>名称</th>
+                <th>类型</th>
+                <th>是否必须</th>
+                <th>描述</th>
+            </tr>
+            <tr>
+                <td>topic</td>
+                <td>字符串</td>
+                <td>是</td>
+                <td>需要添加条目Bloom Filter的Topic</td>
+            </tr>
+            <tr>
+                <td>url</td>
+                <td>字符串</td>
+                <td>是</td>
+                <td>需要添加的条目</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+	<tr>
+        <td><b>可能返回的自定义状态码</b></td>
+        <td>1 、401 、402</th>
+    </tr>
+	<tr>
+        <td><b>请求成功时data字段说明</b></td>
+        <td>
+        <table style="text-align:center">
+            <tr>
+                <th>类型</th>
+                <th>描述</th>
+            </tr>
+            <tr>
+                <td>逻辑值（true 或 false）</td>
+                <td>为true时相应Bloom Filter包含该条目<br>否则表示不包含</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+</table>
+
+
+
+##### 实例 11
+
+用户`nicholas`调用/contains接口，判断Toipc为`geeks$s`的Bloom Filter中是否包含`"www.baidu.com"` 条目。
+
+<img src="https://i.loli.net/2020/05/11/KrS1TGBgZyvJAIu.png" alt="avatar"  />
+
+**说明** ： 请求成功， 因为向Topic为`geeks$s`的Bloom Filter中已经添加了`"www.baidu.com"` 条目， 所以存在。
+
+
+
+##### 实例 12
+
+用户`nicholas`调用/contains接口，判断Toipc为`geeks$s`的Bloom Filter中是否包含`"www.google.com"` 条目。
+
+<img src="https://i.loli.net/2020/05/11/ZnjBygPD1527IuC.png" alt="avatar"  />
+
+**说明** ： 请求成功， 因为未向Topic为`geeks$s`的Bloom Filter中已经添加了`"www.google.com"` 条目， 所以不存在。

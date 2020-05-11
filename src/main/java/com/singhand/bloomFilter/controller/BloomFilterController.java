@@ -136,7 +136,6 @@ public class BloomFilterController {
 		}
 		return DataPackage.buildSuccessfulDataPackage(bloomFilterToJsonStr(bloomFilter));
 	}
-
 	@ResponseBody
 	@RequestMapping(value ="/infoAll", method= RequestMethod.POST)
 	@PreAuthorize("hasAuthority('ROLE_NORMAL')")
